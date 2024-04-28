@@ -23,7 +23,7 @@ This is a simple CRUD application built with Laravel for managing a bookstore.
 1. Clone the repository:
 
     ```bash
-    git clone [repository-url](https://github.com/Piumir3/Book-Store.git)
+    git clone https://github.com/Piumir3/Book-Store.git
     ```
 
 2. Install dependencies:
@@ -63,5 +63,5 @@ This is a simple CRUD application built with Laravel for managing a bookstore.
 - Visit the homepage to view a list of books.
 - Use the navigation links to add, edit, or delete books.
 
-...
+
 
