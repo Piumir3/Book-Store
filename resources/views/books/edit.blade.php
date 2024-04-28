@@ -4,15 +4,25 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Edit Book</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+            <style>
+         
+        .container {
+            margin-top: 25px;
+        }
+        .edit-details {
+            margin-top: 25px;
+        }
+        </style>
     </head>
     <body>
- 
+ <x-app-layout>
 
 @section('content')
     <div class="container">
         <h1>Edit Book</h1>
+        <div class="edit-details">
         <form action="{{ route('books.update', $book->id) }}" method="POST">
             @csrf
             @method('PUT')
@@ -43,6 +53,8 @@
             <button type="submit" class="btn btn-primary">Update Book</button>
         </form>
     </div>
+    </div>
  
 </body>
+</x-app-layout>
 </html>

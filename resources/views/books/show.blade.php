@@ -11,7 +11,7 @@
             padding: 20px;
         }
         .book-details {
-            margin-bottom: 20px;
+            margin-top: 20px;
         }
         .btn-group {
             margin-top: 20px;
@@ -19,10 +19,11 @@
     </style>
 </head>
 <body>
-
+<x-app-layout>
 <div class="container">
-    <h1>Book Details</h1>
+    
     <div class="book-details">
+        <h1>Book Details</h1>
         <strong>Title:</strong> {{ $book->title }} <br>
         <strong>Author:</strong> {{ $book->author }} <br>
         <strong>Price:</strong> {{ $book->price }} <br>
@@ -46,4 +47,5 @@
 </div>
 
 </body>
+</x-app-layout>
 </html>
